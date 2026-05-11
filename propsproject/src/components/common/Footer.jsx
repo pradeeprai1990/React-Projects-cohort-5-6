@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer({children}) {
   return (
     <div>
+        {children}
       <footer className="bg-neutral-primary-soft">
   <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div className="md:flex md:justify-between">

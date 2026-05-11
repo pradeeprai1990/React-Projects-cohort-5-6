@@ -9,9 +9,9 @@ export default function Header( {companyName,email,phone,address} ) {
         {companyName} { email } {phone}
 
         {
-            address.map((v)=>{
+            address.map((v,i)=>{
                 return(
-                    <h3>{v}</h3>
+                    <h3 key={i}>{v}</h3>
                 )
             })
         }

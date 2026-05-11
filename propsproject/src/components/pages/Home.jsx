@@ -35,7 +35,7 @@ export default function Home() {
             product.map((obj,index)=>{
                 return(
                     //   <ProductCard description={obj.description} price={obj.price} productName={obj.title} image={obj.thumbnail} />
-                      <ProductCard data={obj}  />
+                      <ProductCard key={index} data={obj}  />
                 )
             })
          }
@@ -44,8 +44,12 @@ export default function Home() {
           
         </div>
       </section>
-
-      <Footer />
+      
+      <Footer>
+            <h1>Footer Child</h1>
+            Demo
+            <b>Ws</b>
+      </Footer>
     </div>
   );
 }
